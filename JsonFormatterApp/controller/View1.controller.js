@@ -18,6 +18,7 @@ sap.ui.define([
 
                 // @ts-ignore
                 oEditor = this.byId("idCodeEditor");
+                
                 oIconTabBar = this.byId("idIconTabBar");
             },
             onProceed: function() {

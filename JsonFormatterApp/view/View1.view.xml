@@ -3,7 +3,8 @@
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-                <IconTabBar id="idIconTabBar"
+					<MessageStrip text="Paste your unformatted JSON code in below Input code Editor." showIcon="true" width="300px" class="sapUiSmallMargin" type="Information"></MessageStrip>
+               	 <IconTabBar id="idIconTabBar"
                            select="onSelectTab" >
                            <items>
                             <IconTabFilter text="Input Code" key="A"></IconTabFilter>
@@ -13,6 +14,7 @@
                 </IconTabBar>
 
 					<content>
+					
                         <layout:VerticalLayout >
                         <ce:CodeEditor id="idCodeEditor" height="400px" width="1200px" type="javascript"></ce:CodeEditor>
                         <layout:HorizontalLayout class="sapUiContentPadding">
