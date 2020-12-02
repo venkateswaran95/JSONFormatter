@@ -1,0 +1,30 @@
+<mvc:View xmlns:layout="sap.ui.layout" controllerName="ns.HTML5Module1.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns:ce="sap.ui.codeeditor" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+                <IconTabBar id="idIconTabBar"
+                           select="onSelectTab" >
+                           <items>
+                            <IconTabFilter text="Input Code" key="A"></IconTabFilter>
+                            <IconTabFilter text="Output Code" key="B"></IconTabFilter>
+                           </items>
+
+                </IconTabBar>
+
+					<content>
+                        <layout:VerticalLayout >
+                        <ce:CodeEditor id="idCodeEditor" height="400px" width="1200px" type="javascript"></ce:CodeEditor>
+                        <layout:HorizontalLayout class="sapUiContentPadding">
+                            <Button type="Default" id="idInputButton" text="Process Input" press="onProceed"></Button>
+                            <Button type="Default" id="idOutputButton" text="Download Output" press="onDownload" visible="false"></Button>
+                        </layout:HorizontalLayout>
+                        
+                        
+                        </layout:VerticalLayout>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
